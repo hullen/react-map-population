@@ -8,8 +8,7 @@ const styles = {
   height: '100%',
 };
 
-mapboxgl.accessToken =
-  'pk.eyJ1IjoiaHVsbGVuIiwiYSI6ImNrZHg4M2tkeTE4MGkycmtqa2RybWxnNGEifQ.gRckSr-z_wMCgsbcg2EJ_A';
+mapboxgl.accessToken = process.env.REACT_APP_API_MAPBOX;
 
 const Map = ({ onClick, setMapRef }) => {
   const mapContainer = useRef(null);
@@ -26,7 +25,7 @@ const Map = ({ onClick, setMapRef }) => {
   useEffect(() => {
     const mapboxMap = new mapboxgl.Map({
       container: mapContainer.current,
-      style: 'mapbox://styles/hullen/ckdx86csk38kp19oa1ydn30hd/draft',
+      style: 'mapbox://styles/hullen/ckdx86csk38kp19oa1ydn30hd',
       center: [0, 0],
       zoom: 5,
     });

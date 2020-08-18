@@ -10,7 +10,7 @@ function App() {
   return (
     <div
       style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
         <Header />
         <Suspense fallback={<div>Loading...</div>}>
           <Switch>
