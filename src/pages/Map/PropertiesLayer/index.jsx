@@ -1,4 +1,3 @@
-/* eslint-disable no-param-reassign */
 import { useEffect } from 'react';
 import { usePopover } from '../hooks';
 
