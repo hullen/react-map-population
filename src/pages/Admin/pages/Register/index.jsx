@@ -29,11 +29,12 @@ export default function Register() {
       setLoading(true);
       createProperty(data)
         .then(() => {
-          setLoading(false);
           history.push(`/admin`);
         })
-        .catch(e => console.log('e', e))
-        .finally(() => setLoading(false));
+        .catch(e => {
+          setLoading(false);
+          console.log('e', e);
+        });
     },
     [history]
   );
