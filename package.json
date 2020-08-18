@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "description": "React Frontend - City Map Population",
   "main": "src/index.js",
+  "homepage": "https://hullen.github.io/react-map-population/",
   "repository": "git@github.com:hullen/react-map-population.git",
   "author": "Hullen Gonzales <hullenn@gmail.com>",
   "private": true,
@@ -22,7 +23,9 @@
   },
   "scripts": {
     "start": "react-app-rewired start",
-    "build": "react-app-rewired build"
+    "build": "react-app-rewired build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "browserslist": {
     "production": [
@@ -48,6 +51,7 @@
     "eslint-plugin-prettier": "^3.1.4",
     "eslint-plugin-react": "^7.20.4",
     "eslint-plugin-react-hooks": "^4.0.8",
+    "gh-pages": "^3.1.0",
     "http-proxy-middleware": "^1.0.5",
     "prettier": "^2.0.5",
     "react-app-rewired": "^2.1.6"
