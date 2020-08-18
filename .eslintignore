@@ -1,0 +1,10 @@
+/scripts/
+/config/
+/node_modules/
+/public/
+config-overrides.js
+/src/setupProxy.js
+/src/serviceWorker.js
+*.svg
+svg-loader.js
+jsconfig.json
