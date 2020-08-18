@@ -2,6 +2,7 @@
 /config/
 /node_modules/
 /public/
+/build/
 config-overrides.js
 /src/setupProxy.js
 /src/serviceWorker.js
