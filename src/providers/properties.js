@@ -5,5 +5,5 @@ export function fetchAllProperties() {
 }
 
 export function createProperty(data) {
-  return api.post(`/properties/register`, data);
+  return api.post(`/properties`, data);
 }

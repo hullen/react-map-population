@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'https://api.mocki.io/v1/dfd64349',
+  baseURL: 'https://hullen.free.beeceptor.com/map-population',
 });
 
 export default api;
